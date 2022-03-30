@@ -1,0 +1,27 @@
+{
+  "name": "c4-26",
+  "version": "1.0.0",
+  "description": "Proyecto de JobsMarket centrado en los servicios de los mejores profesionales a su disposición.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/No-Country/C4-26.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/No-Country/C4-26/issues"
+  },
+  "homepage": "https://github.com/No-Country/C4-26#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "mssql": "^8.0.2"
+  }
+}
