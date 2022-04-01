@@ -9,15 +9,15 @@ const {
 
 const router = Router();
 
-router.get('/tasks', getAllServices);
+router.get('/servicesAllGet', getAllServices);
 
-router.get('/tasks/:id', getService);
+router.get('/serviceGet/:id', getService);
 
-router.post('/tasks', createService);
+router.post('/servicePost', createService);
 
-router.delete('/tasks/:id', deleteService);
+router.delete('/serviceDelete/:id', deleteService);
 
-router.put('/tasks/:id', updateService);
+router.put('/serviceUpdate/:id', updateService);
 
 
 module.exports = router;
