@@ -1,25 +1,34 @@
-const express = require('express');
-const morgan = require('morgan');
-const cors = require('cors');
+const express = require('express')
+const app = express()
+const { PORT, CLIENT_URL } = require('./constants')
+const cookieParser = require('cookie-parser')
+const passport = require('passport')
+const cors = require('cors')
 
-const servicesRoutes = require('./routes/services.routes.js')
+//import passport middleware
+require('./middlewares/passport-middleware')
 
-const app = express();
+//initialize middlewares
+app.use(express.json())
+app.use(cookieParser())
+app.use(cors({ origin: CLIENT_URL, credentials: true }))
+app.use(passport.initialize())
 
-app.use(cors());
+//import routes
+const authRoutes = require('./routes/auth.routes')
 
-app.use(morgan('dev'));
+//initialize routes
+app.use('/api', authRoutes)
 
-app.use(express.json());
-
-app.use(servicesRoutes);
-
-app.use((err, req, res, next) => {
-    return res.json({
-        message: err.message
+//app start
+const appStart = () => {
+  try {
+    app.listen(PORT, () => {
+      console.log(`The app is running at http://localhost:${PORT}`)
     })
-});
+  } catch (error) {
+    console.log(`Error: ${error.message}`)
+  }
+}
 
-
-app.listen(4000);
-console.log("Server on port 4000");
+appStart();

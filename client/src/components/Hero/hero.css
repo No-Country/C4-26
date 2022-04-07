@@ -1,0 +1,140 @@
+main{
+    height: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: #009650;*/
+}
+.hero-container{
+    display: flex;
+    justify-content: center;
+    height: 32vw;
+    width: 90%;
+    /*background-color: aqua;*/
+    position: absolute;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 40%;
+    height: 20vw;
+    left: 10%;
+    top: 5vw;
+  }
+  .h1Gradient{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    margin:0;  
+    color:black;
+    line-height: 65px;
+    letter-spacing: 2px;
+  }
+  
+  .img-div img {
+    position: relative;
+    width: 30vw; 
+    top:1.5vw;
+    align-content: center;
+    left: 30vw;
+  }
+
+@media screen and (max-width:992px){
+    main{
+        margin-top: 1%;
+        height: 60vw;
+    }
+    .hero-container {
+        display: grid;
+        justify-content: center;
+        margin: 11%;
+        height: 60vw;
+  }
+.img-div img{
+    width: 40vw;
+    top: 37vw;
+    left: 4vw;
+        /*background-color: lightpink*/
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute; 
+     width: 80%; 
+    height: 20vw;
+    left: 10%;
+    top: 5vw;
+}
+.h1Gradient {
+    font-size: 3.5em;
+    /* margin: 9px; */
+    text-align: center;
+    margin-left: 12vw;
+
+}
+
+}
+@media screen and (max-width:768px){
+    main{
+        margin-top: 3%;
+        height: 70vw;
+    }
+    .hero-container {
+        display: grid;
+        justify-content: center;
+        margin: 11%;
+        height: 60vw;
+  }
+.img-div img{
+    width: 50vw;
+    top: 35.5vw;
+    left: 10vw;
+        /*background-color: lightpink*/
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute; 
+     width: 80%; 
+    height: 20vw;
+    left: 10%;
+    top: 5vw;
+}
+.h1Gradient {
+    font-size: 2.9em;
+    /* margin: 9px; */
+    text-align: center;
+    letter-spacing: 1px;
+}
+  }
+
+@media (max-width: 550px){
+    main {
+        margin-top: 6%;
+    }
+    .img-div img {
+        top: 39.5vw;
+  }
+  .h1Gradient {
+    font-size: 2em;
+}
+}
+  
+ @media (max-width:425px){
+    
+    main{
+        margin-top: 14%;
+    }
+    
+    .text .h1Gradient{
+        font-size: 1.5em;
+        margin: 0;
+        text-align: center;
+    }
+    
+  
+  }
+  

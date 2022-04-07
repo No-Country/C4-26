@@ -1,0 +1,29 @@
+@import url(../components/Footer/footer.css);
+@import url(../components/Hero/hero.css);
+@import url(../components/HomeSection/homeSection.css);
+@import url(../components/Navbar/navbar.css);
+@import url(../components/Newsletter/newletter.css);
+@import url(../components/MainHome/mainHome.css);
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  }
+  
+  html {
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+
+  :root {
+      --color-btnLogin: #EF5B00;
+      --color-btnLogout:#FF9D00;
+      --color-footer:#003E5C;
+  }

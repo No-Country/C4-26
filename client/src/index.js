@@ -1,14 +1,12 @@
 import { createRoot } from "react-dom/client";
 import React from "react";
-import "./index.css";
-import reportWebVitals from "./reportWebVitals";
-import LoginPage from "./pages/login/app/LoginPage";
+import App from "./App";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
+
 root.render(
   <React.StrictMode>
-    <LoginPage />
+    <App />
   </React.StrictMode>
 );
-reportWebVitals();
