@@ -9,10 +9,40 @@
     height: 2.5rem;
     line-height: 0;
     transition: 0.5s;
+    width: toRem(350);
 
     &:hover {
         background: #fea02f;
         transform: scale(0.95);
         
+    }
+}
+
+.register-btn {
+    @include primary-font;
+    font-weight: 500;
+    font-size: toRem(28);
+    padding: 1.875rem 1.25rem;
+    border-radius: 0.3125rem;
+    background: #de6600;
+    border: none;
+    height: 2.5rem;
+    line-height: 0;
+    transition: 0.5s;
+    width: toRem(350);
+
+    &:hover {
+        background: #fea02f;
+        transform: scale(0.95);
+        
+    }
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+
+    & .button-ctr{
+        margin: toRem(10) auto;
     }
 }

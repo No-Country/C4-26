@@ -19,7 +19,7 @@
 // }
 
 @function toRem($px:0) {
-    $remValue: ($px / 16)*1rem;
+    $remValue: calc(($px / 16)*1rem);
     @return $remValue;
 }
 

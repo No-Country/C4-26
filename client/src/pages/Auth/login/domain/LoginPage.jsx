@@ -4,6 +4,7 @@ import "../sass/style.scss";
 import signin from "../../../../assets/img/login/young-woman.png";
 import iconGoogle from "../../../../assets/img/login/GoogleIcon.png";
 import { Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   // ===================== Block 0 - Variables de estado =============================
@@ -39,9 +40,9 @@ const LoginPage = () => {
 
             <div className="signup-link">
               Estas registrado?{" "}
-              <a href="/" title="Registrarme ahora">
+              <Link to="/register" title="Registrarme ahora">
                 Registrarme ahora
-              </a>
+              </Link>
             </div>
 
             <Form>

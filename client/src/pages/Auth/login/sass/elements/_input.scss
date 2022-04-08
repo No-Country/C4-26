@@ -9,9 +9,36 @@
     border-radius: 0.625rem;
     border: none;
     font-weight: 500;
+    width: toRem(350);
 
     &:nth-child(1){
         margin-bottom: 0.9375rem;
     }
 
+    &:hover {
+        background: white;
+    }
+
+}
+
+.reg-input-field{
+    padding: 0.875rem toRem(15);
+    background: #ebd9c8;
+    border-radius: 0.625rem;
+    border: none;
+    font-weight: 500;
+    font-size: 26px;
+    width: toRem(600);
+    margin: toRem(15);
+}
+
+.form-control-reg{
+    color: white !important;
+    font-size: 25px !important;
+
+
+ & .input-reg{
+    color: white !important;
+    font-size: toRem(55) !important;
+}
 }

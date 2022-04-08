@@ -1,0 +1,51 @@
+.register-wrapper {
+    padding: toRem(10);
+    border: toRem(3) solid #003f5a;
+    background: linear-gradient(to right, rgba(0, 60, 95, 0.884),
+    rgba(0, 29, 107, 0.856)
+    );
+
+    border-radius: toRem(46);
+    display: flex;
+    transform: scale(0.5);
+    height: 100hv;
+
+    .register-box {
+        padding: toRem(20);
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    
+        & .register-content {
+           width: toRem(500);
+           margin-left: auto;
+           margin-right: auto; 
+        }
+    
+        & .register-title {
+            @include primary-font;
+            padding: toRem(20) toRem() toRem() toRem();
+            font-weight: 600;
+            font-size: toRem(50);
+            margin-bottom: 0;
+            color: white;
+    
+        }
+    
+        & .reg-subTitle {
+            margin: 0;
+            padding: toRem(0) toRem(0) toRem(25) toRem(0) !important;
+            font-size: toRem(25);
+            color:white;
+        }
+    
+        & .reg-tagline {
+            font-weight: 500;
+            margin: 1rem 0 2.2rem 0;
+            font-size: 0.7rem;
+        }
+    }
+}
+
