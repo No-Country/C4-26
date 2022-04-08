@@ -1,5 +1,5 @@
 const { rows } = require('pg/lib/defaults');
-const pool = require('../db');
+const pool = require('../database/db');
 
 const getAllServices = async (req, res, next) => {
     try {
