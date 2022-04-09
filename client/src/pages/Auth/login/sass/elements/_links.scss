@@ -1,5 +1,5 @@
 .signup-link {
-    font-size: 0.9375rem;
+    font-size: toRem(18);
     position: relative;
     float: right;
     padding-bottom: 5px;
@@ -14,20 +14,22 @@
 }
 
 .recover-pass {
-    color: #3a3a3a;
+    color: #003f5a;
     width: 100%;
     text-align: end;
     margin: toRem(4) toRem(0) toRem(19) toRem(0);
+    font-weight: 500;
 
     .pass-link {
         color: #003f5a;
-        font-size: toRem(15);
+        font-size: toRem(18);
         text-decoration: none;
 
     }
 }
 
 .icon-box {
+
     display: flex;
     justify-content: center;
     column-gap: 25px;
@@ -36,4 +38,8 @@
         padding-bottom: toRem(12);
         width: 35px;  
     }
+}
+
+.next-login{
+    font-size: toRem(18);
 }

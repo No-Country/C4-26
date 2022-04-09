@@ -1,0 +1,13 @@
+.img-perfil {
+    display: flex;
+    justify-content: center;
+
+
+    & .reg-img {
+
+        width: toRem(150);
+        padding: toRem(10);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
