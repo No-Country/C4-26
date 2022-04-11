@@ -7,7 +7,7 @@ import {
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/home/domain/Home";
 import Help from "./pages/help/Help";
-import Workers from "./pages/workers/Workers";
+import Workers from "./pages/workers/domain/Workers";
 import Generals from "./styled-components/styles_generals";
 import AboutMe from "./pages/about_me/AboutMe";
 import Login from "./pages/Auth/login/domain/LoginPage";
