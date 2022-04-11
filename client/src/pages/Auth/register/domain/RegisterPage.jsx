@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import "../../login/sass/style.scss";
+import { countrys } from "../infrastructure/_countries";
 
 import imgPerfilM from "../../../../assets/img/naranja1.png";
 
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
 const RegisterPage = () => {
   // ===================== Block 0 - Variables de estado =============================
@@ -62,7 +63,7 @@ const RegisterPage = () => {
               <hr />
               <span className="next-login">
                 <div className="icon-reg">
-                  {/*<FontAwesomeIcon className="icon-reg" icon={faUserPlus} />*/}
+                  <FontAwesomeIcon className="icon-reg" icon={faUserPlus} />
                 </div>
               </span>
               <hr />
@@ -121,7 +122,7 @@ const RegisterPage = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Correo Electónico"
+                placeholder="ejemplo@ejemplo.com"
                 className="form-control-reg reg-input-field"
                 autoComplete="off"
                 onChange={handleChange}
@@ -147,7 +148,6 @@ const RegisterPage = () => {
                 <option>Seleccionar una categoria</option>
                 <option value="teekers">Seekers</option>
                 <option value="teamers">Teamers</option>
-                ))
               </select>
 
               <label className="name-input">Pais de Residencia</label>
