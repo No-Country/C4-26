@@ -3,9 +3,9 @@ import Button from "react-bootstrap/Button";
 import "../../login/sass/style.scss";
 
 import imgPerfilM from "../../../../assets/img/naranja1.png";
-import imgPerfilF from "../../../../assets/img/avatar2.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
 const RegisterPage = () => {
   // ===================== Block 0 - Variables de estado =============================
@@ -50,7 +50,7 @@ const RegisterPage = () => {
               <hr />
               <span className="next-login">
                 <div className="icon-reg">
-                  <FontAwesomeIcon className="icon-reg" icon={faUserPlus} />
+                  {/*<FontAwesomeIcon className="icon-reg" icon={faUserPlus} />*/}
                 </div>
               </span>
               <hr />
