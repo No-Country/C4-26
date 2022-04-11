@@ -5,6 +5,7 @@ import signin from "../../../../assets/img/login/young-woman.png";
 import iconGoogle from "../../../../assets/img/login/GoogleIcon.png";
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 const LoginPage = () => {
   // ===================== Block 0 - Variables de estado =============================
@@ -23,6 +24,14 @@ const LoginPage = () => {
   };
 
   // =================================================================================
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
 
   return (
     <>
@@ -45,16 +54,27 @@ const LoginPage = () => {
               </Link>
             </div>
 
-            <Form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-group">
                 <input
                   type="email"
                   name="userName"
-                  placeholder="Ingrese el usuario"
+                  placeholder="Correo electrónico"
                   className="form-control input-field"
                   autoComplete="off"
                   onChange={handleChange}
+                  {...register("userName", {
+                    required: {
+                      value: true,
+                      message: "* El campo del correo es requerido",
+                    },
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                      message: "* El formato del correo no es el correcto",
+                    },
+                  })}
                 />
+
                 <input
                   type="password"
                   name="password"
@@ -62,7 +82,28 @@ const LoginPage = () => {
                   className="form-control input-field"
                   autoComplete="off"
                   onChange={handleChange}
+                  {...register("password", {
+                    required: {
+                      value: true,
+                      message: "* El campo de contraseña es requerido",
+                    },
+                    minLength: {
+                      value: 6,
+                      message:
+                        "* La contraseña debe contener al menos 6 caracteres",
+                    },
+                  })}
                 />
+                {errors.userName && (
+                  <span className="errorMessage">
+                    {errors.userName.message}
+                  </span>
+                )}
+                {errors.password && (
+                  <span className="errorMessage">
+                    {errors.password.message}
+                  </span>
+                )}
                 <div className="recover-pass">
                   <a
                     href="/"
@@ -74,14 +115,17 @@ const LoginPage = () => {
                 </div>
                 <div className="d-grid gap-2">
                   <Button
+                    type="submit"
+                    value="submit"
                     size="lg"
-                    className=" text-center btn btn-danger btn-block signin-btn"
+                    className="text-center btn btn-danger btn-block signin-btn"
+                    onSubmit={onSubmit}
                   >
                     Ingresar
                   </Button>
                 </div>
               </div>
-            </Form>
+            </form>
 
             <div className="separator">
               <hr />

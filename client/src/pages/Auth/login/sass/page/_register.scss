@@ -97,3 +97,10 @@
 .column-reg{
     width: toRem(430);
 }
+
+.name-input {
+    @include primary-font;
+    font-size: toRem(12);
+    padding-left: toRem(5);
+
+}

@@ -13,7 +13,11 @@
     font-size: toRem(23);
 
     &:nth-child(1){
-        margin-bottom: 0.9375rem;
+        margin-bottom: toRem(15);
+    }
+
+    &:nth-child(2){
+        margin-bottom: toRem(10);
     }
 
     &:hover {
@@ -37,8 +41,8 @@
 
     &:hover{
 
-        color: rgba(129, 49, 2, 0.568);
-        border: solid 2px orangered
+        color: #003f5a;
+        border: solid 1px orangered
     }
 
 }
@@ -46,6 +50,49 @@
 .form-control-reg:focus{
     border: none !important;
     box-shadow: none !important;
+
+}
+
+.cod-input-field{
+    padding: toRem(8) toRem(15);
+    background: rgba($color: #000000, $alpha: 0);
+    border-radius: 0.5rem;
+    border: solid toRem(1) #003f5a;
+    font-weight: 500;
+    font-size: toRem(14);
+    width: toRem(120);
+    margin-left: auto;
+    margin-right: toRem(10);
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+    &:hover{
+
+        color: #003f5a;
+        border: solid 1px orangered
+    }
+
+}
+
+.num-input-field{
+    padding: toRem(8) toRem(15);
+    background: rgba($color: #000000, $alpha: 0);
+    border-radius: 0.5rem;
+    border: solid toRem(1) #003f5a;
+    font-weight: 500;
+    font-size: toRem(14);
+    width: toRem(260);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    &:hover{
+
+        color: #003f5a;
+        border: solid 1px orangered
+    }
 
 }
 
