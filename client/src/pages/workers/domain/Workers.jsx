@@ -1,13 +1,12 @@
-import React from 'react'
-import CardWorkers from '../../../components/Workers/CardWorkers/CardWorkers'
+import React from "react";
+import CardWorkers from "../../../components/Workers/CardWorkers/CardWorkers";
 
 const Workers = () => {
   return (
-    <div>Workers
-      <CardWorkers/>
-     
+    <div>
+      <CardWorkers />
     </div>
-  )
-}
+  );
+};
 
-export default Workers
+export default Workers;

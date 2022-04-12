@@ -4,18 +4,15 @@ import "../../login/sass/style.scss";
 import { countrys } from "../infrastructure/_countries";
 import imgPerfilM from "../../../../assets/img/naranja1.png";
 
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
 const RegisterPage = () => {
   // ===================== Block 0 - Variables de estado =============================
 
   const [userDataregister, setUserDataregister] = useState([]);
-  const [dataCountry, setDataCountry] = useState([]);
 
   // ===================== Block 1 - Variables y constantes ==========================
-
-  const UrlCountry = "https://restcountries.com/v2/";
 
   // =================================================================================
 
@@ -28,7 +25,9 @@ const RegisterPage = () => {
     });
   };
 
-  console.log(userDataregister);
+  const handleImg = () => {
+    console.log("Cargar img");
+  };
 
  
 
@@ -43,7 +42,12 @@ const RegisterPage = () => {
           </div>
 
           <div className="register-content img-perfil">
-            <img className="reg-img" src={imgPerfilM} alt="Img-Perfil" />
+            <img
+              onClick={handleImg}
+              className="reg-img"
+              src={imgPerfilM}
+              alt="Img-Perfil"
+            />
           </div>
 
           <div className="register-content">
@@ -54,7 +58,7 @@ const RegisterPage = () => {
               <hr />
               <span className="next-login">
                 <div className="icon-reg">
-                  {/*<FontAwesomeIcon className="icon-reg" icon={faUserPlus} />*/}
+                  <FontAwesomeIcon className="icon-reg" icon={faUserPlus} />
                 </div>
               </span>
               <hr />
@@ -81,16 +85,16 @@ const RegisterPage = () => {
                   placeholder="Código"
                   onChange={handleChange}
                 >
-                  <option>Seleccionar país</option>
+                  <option>Codigo</option>
                   {countrys.map((country) => (
-                    <option key={country.code} value={country.label}>
+                    <option key={country.code} value={country.phone}>
                       {`${country.code}(+${country.phone})`}
                     </option>
                   ))}
                 </select>
 
                 <input
-                  type="number"
+                  type="text"
                   name="phone-num"
                   placeholder="Teléfono"
                   className="form-control-reg num-input-field"
@@ -113,7 +117,7 @@ const RegisterPage = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Correo Electónico"
+                placeholder="ejemplo@ejemplo.com"
                 className="form-control-reg reg-input-field"
                 autoComplete="off"
                 onChange={handleChange}
@@ -132,19 +136,19 @@ const RegisterPage = () => {
               <label className="name-input">Categoría</label>
               <select
                 className="form-control-reg reg-input-field"
-                name="code-country"
+                name="category"
                 placeholder="Codigo y Pais"
+                onChange={handleChange}
               >
                 <option>Seleccionar una categoria</option>
-                <option>Seekers</option>
-                <option>Teamers</option>
-                ))
+                <option value="teekers">Seekers</option>
+                <option value="teamers">Teamers</option>
               </select>
 
               <label className="name-input">Pais de Residencia</label>
               <select
                 className="form-control-reg reg-input-field"
-                name="code-country"
+                name="country"
                 placeholder="Codigo y Pais"
                 onChange={handleChange}
               >
@@ -162,6 +166,7 @@ const RegisterPage = () => {
             <Button
               size="lg"
               className="button-ctr mt-3 text-center btn btn-danger btn-block register-btn"
+              onClick={handleRegister}
             >
               Registrarme
             </Button>
