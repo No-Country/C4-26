@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import "../../login/sass/style.scss";
-
+import { countrys } from "../infrastructure/_countries";
 import imgPerfilM from "../../../../assets/img/naranja1.png";
 
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,19 +30,7 @@ const RegisterPage = () => {
 
   console.log(userDataregister);
 
-  const getAllCountry = async () => {
-    try {
-      setDataCountry(
-        await axios.get(UrlCountry + "all").then((country) => country.data)
-      );
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    getAllCountry();
-  }, []);
+ 
 
   // =================================================================================
 
