@@ -6,12 +6,13 @@ import { countrys } from "../infrastructure/_countries";
 import imgPerfilM from "../../../../assets/img/naranja1.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { faUserPlus, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 
 const RegisterPage = () => {
   // ===================== Block 0 - Variables de estado =============================
 
   const [userDataregister, setUserDataregister] = useState([]);
+  const [srcImg, setSrcImg] = useState(imgPerfilM);
 
   // ===================== Block 1 - Variables y constantes ==========================
 
@@ -47,10 +48,25 @@ const RegisterPage = () => {
           </div>
 
           <div className="register-content img-perfil">
+            <div className="box-file" role="button" tabIndex="0">
+              <input
+                id="add-photo"
+                type="file"
+                accept="image/*"
+                name="image[]"
+                style={{ display: "none" }}
+              />
+              <label htmlFor="add-photo">
+                <FontAwesomeIcon
+                  className="img-edit-reg"
+                  icon={faPenToSquare}
+                />
+              </label>
+            </div>
             <img
               onClick={handleImg}
               className="reg-img"
-              src={imgPerfilM}
+              src={srcImg}
               alt="Img-Perfil"
             />
           </div>

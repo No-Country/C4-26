@@ -24,15 +24,38 @@
     font-size: toRem(22);
     padding: 1.5rem 1.1rem;
     border-radius: toRem(45);
-    background: #de6600;
+    //background: #de6600;
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
     border: none;
     height: 2.5rem;
     line-height: 0;
     transition: 0.5s;
     width: toRem(400);
+    color: white;
+    // text-shadow: 
+    // -1px -1px 0 #003f5a,
+    // -1px 1px 0 #003f5a,
+    // 1px -1px 0 #003f5a,
+    // 1px 1px 0 #003f5a
+    // ;
 
     &:hover {
-        background: #fea02f;
+        //background: #fea02f;
+        background: radial-gradient(
+        circle at 33% 80%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
         transform: scale(0.95);
         
     }

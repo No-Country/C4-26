@@ -104,3 +104,22 @@
     padding-left: toRem(5);
 
 }
+
+input[type="file"]{
+    display: none;
+}
+
+.img-edit-reg{
+
+    height: toRem(18);
+    min-height: 15px;
+    margin: toRem(120) toRem(0) toRem(0) toRem(100);
+    cursor: pointer;
+    color: #ebd9c8;
+    position: absolute !important;
+    border: 6px solid #003f5a; 
+    border-radius: 50%;
+    background: #003f5a;
+}
+
+
