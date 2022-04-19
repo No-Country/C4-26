@@ -9,7 +9,7 @@ const HomeSection = () => {
             <section className="mh-review">
               <div className="mh-box-container">
                 <div className="mh-box">
-                  <i className="fas fa-quote-right"></i>
+                  <i className="hs-quote-right"></i>
                   <div className="user-commets">
                   <img
                       className="mh-img"
@@ -28,7 +28,7 @@ const HomeSection = () => {
             <section className="mh-review">
               <div className="mh-box-container">
                 <div className="mh-box">
-                  <i className="fas fa-quote-right"></i>
+                  <i className="hs-quote-right"></i>
                   <div className="user-commets">
                   <img
                       className="mh-img-sale"
@@ -47,7 +47,7 @@ const HomeSection = () => {
             <section className="mh-review">
               <div className="mh-box-container">
                 <div className="mh-box">
-                  <i className="fas fa-quote-right"></i>
+                  <i className="hs-quote-right"></i>
                   <div className="user-commets">
                   <img
                       className="mh-img-expe"

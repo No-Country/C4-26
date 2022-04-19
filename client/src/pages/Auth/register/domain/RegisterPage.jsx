@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import "../../login/sass/style.scss";
 import { countrys } from "../infrastructure/_countries";
-
 import imgPerfilM from "../../../../assets/img/naranja1.png";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 
@@ -30,12 +28,6 @@ const RegisterPage = () => {
   const handleImg = () => {
     console.log("Cargar img");
   };
-
-  const handleRegister = () => {
-    console.log(userDataregister);
-  };
-
-  useEffect(() => {}, []);
 
   // =================================================================================
 
@@ -79,7 +71,7 @@ const RegisterPage = () => {
               <hr />
               <span className="next-login">
                 <div className="icon-reg">
-                  <FontAwesomeIcon className="icon-reg" icon={faUserPlus} />
+                  {/*<FontAwesomeIcon className="icon-reg" icon={faUserPlus} />*/}
                 </div>
               </span>
               <hr />
@@ -187,7 +179,7 @@ const RegisterPage = () => {
             <Button
               size="lg"
               className="button-ctr mt-3 text-center btn btn-danger btn-block register-btn"
-              onClick={handleRegister}
+              /*onClick={handleRegister}*/
             >
               Registrarme
             </Button>

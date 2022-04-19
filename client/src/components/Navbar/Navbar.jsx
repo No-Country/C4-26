@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
+import logo from "../../assets/img/jobs_markets.svg"
 import "../Navbar/navbar.css"
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             className="h-logo_img"
-            src={require("../../assets/img/JobMarket_2.png")}
+            src={logo}
             title="Logo GardenMap"
             alt="Logo GardenMap"
           />
