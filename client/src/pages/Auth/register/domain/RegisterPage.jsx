@@ -8,9 +8,9 @@ import { faUserPlus, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 
 const RegisterPage = () => {
   // ===================== Block 0 - Variables de estado =============================
-
+  let urlImage = "https://i.ibb.co/Dz63LdG/naranja1.png";
   const [userDataregister, setUserDataregister] = useState([]);
-  const [srcImg, setSrcImg] = useState(imgPerfilM);
+  const [srcImg, setSrcImg] = useState(urlImage);
 
   // ===================== Block 1 - Variables y constantes ==========================
 
@@ -25,8 +25,14 @@ const RegisterPage = () => {
     });
   };
 
-  const handleImg = () => {
-    console.log("Cargar img");
+  const handleUpLoadImg = (e) => {
+    const fileImg = new FileReader();
+    fileImg.onload = () => {
+      if (fileImg.readyState === 2) {
+        setSrcImg(fileImg.result);
+      }
+    };
+    fileImg.readAsDataURL(e.target.files[0]);
   };
 
   // =================================================================================
@@ -47,6 +53,7 @@ const RegisterPage = () => {
                 accept="image/*"
                 name="image[]"
                 style={{ display: "none" }}
+                onChange={handleUpLoadImg}
               />
               <label htmlFor="add-photo">
                 <FontAwesomeIcon
@@ -55,12 +62,7 @@ const RegisterPage = () => {
                 />
               </label>
             </div>
-            <img
-              onClick={handleImg}
-              className="reg-img"
-              src={srcImg}
-              alt="Img-Perfil"
-            />
+            <img className="reg-img" src={srcImg} alt="Img-Perfil" />
           </div>
 
           <div className="register-content">
