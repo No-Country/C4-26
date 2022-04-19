@@ -71,7 +71,7 @@ const RegisterPage = () => {
               <hr />
               <span className="next-login">
                 <div className="icon-reg">
-                  {/*<FontAwesomeIcon className="icon-reg" icon={faUserPlus} />*/}
+                  <FontAwesomeIcon className="icon-reg" icon={faUserPlus} />
                 </div>
               </span>
               <hr />
