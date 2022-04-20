@@ -19,7 +19,9 @@ const MainHome = () => {
           </p>
         </div>
       </div>
+
     </div>
+    
   )
 }
 

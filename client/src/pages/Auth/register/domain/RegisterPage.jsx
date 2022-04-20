@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import "../../login/sass/style.scss";
 import { countrys } from "../infrastructure/_countries";
-import imgPerfilM from "../../../../assets/img/naranja1.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserPlus, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+//import imgPerfilM from "../../../../assets/img/naranja1.png";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faUserPlus, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 
 const RegisterPage = () => {
   // ===================== Block 0 - Variables de estado =============================
@@ -56,10 +56,10 @@ const RegisterPage = () => {
                 onChange={handleUpLoadImg}
               />
               <label htmlFor="add-photo">
-                <FontAwesomeIcon
+                {/*<FontAwesomeIcon
                   className="img-edit-reg"
                   icon={faPenToSquare}
-                />
+                />*/}
               </label>
             </div>
             <img className="reg-img" src={srcImg} alt="Img-Perfil" />
@@ -73,7 +73,7 @@ const RegisterPage = () => {
               <hr />
               <span className="next-login">
                 <div className="icon-reg">
-                  <FontAwesomeIcon className="icon-reg" icon={faUserPlus} />
+                  {/*<FontAwesomeIcon className="icon-reg" icon={faUserPlus} />*/}
                 </div>
               </span>
               <hr />
