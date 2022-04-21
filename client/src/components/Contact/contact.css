@@ -1,3 +1,4 @@
+
 .contact-title{
     position: relative;
     width: 573px;
@@ -51,4 +52,73 @@
     margin:auto;
     transform: translate(30%, 30px);
     margin-bottom: 2em;
+}
+
+/*
+.contact-main{
+    margin-top: 3em;
+    position: relative;
+}*/
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+    .contact-main{
+    margin-top: 8em;
+    position: relative;
+    }
+    .contact-title {
+    /* position: absolute; */
+    top: 2em;
+    margin-bottom: 2em;
+    
+    margin-top: -100px;
+    margin-left: -100px;
+    left: 20%;
+    }
+    .contact-text {
+    position: relative;
+    width: 70%;
+    /* height: 98px; */
+    left: 16%;
+    top: 0vw;
+    }
+    .contact-input {
+    position: relative;
+    width: 50%;
+    height: 30px;
+    left: 26%;
+    /* top: 1em; */
+    margin-bottom: 1em;
+    }
+    .contact-right1 {
+    width: 38%;
+    display: block;
+    margin: auto;
+    transform: translate(20%, 30px);
+    margin-bottom: 2em;
+}
+
+}
+
+/*.contact-title {
+    /* position: absolute; 
+    top: 2em;
+    margin-bottom: 2em;
+    left: 6%;
+    margin-top: -100px;*/
+    /*margin-left: -100px;
+}*/
+
+@media screen and (max-width: 425px) {
+    .contact-title {
+    left: 6%;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    }
+    .contact-text{
+    font-size: 1rem;
+    }
+
+
+
 }

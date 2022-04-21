@@ -13,7 +13,7 @@ const HomeSection = () => {
                   <div className="user-commets">
                   <img
                       className="mh-img"
-                      src={require("../../assets/img/icons8-idea-64.png")}
+                      src={require("../../assets/img/idea_lamp.png")}
                       alt=""
                     />
                     <h3 className="mh-coment-name">Support</h3>
@@ -32,7 +32,7 @@ const HomeSection = () => {
                   <div className="user-commets">
                   <img
                       className="mh-img-sale"
-                      src={require("../../assets/img/icons8-sale-47.png")}
+                      src={require("../../assets/img/salePercent.png")}
                       alt=""
                     />
                     <h3 className="mh-coment-name">Sale</h3>
@@ -51,7 +51,7 @@ const HomeSection = () => {
                   <div className="user-commets">
                   <img
                       className="mh-img-expe"
-                      src={require("../../assets/img/icons8-rocket-64.png")}
+                      src={require("../../assets/img/experienceRocket.png")}
                       alt=""
                     />
                     <h3 className="mh-coment-name">Experience</h3>

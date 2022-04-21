@@ -38,7 +38,7 @@
     width: 20vw;
   }
   .mh-review .mh-box-container .mh-box {
-    background: #EED9C7;
+    /*background: #EED9C7;*/
     margin: 1rem;
     padding: 1rem;
     text-align: center;
@@ -50,9 +50,26 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4), 0 5px 15px rgba(0, 0, 0, 0.1);
     flex: 1 1 30rem;
     border-radius: 0.5rem;
-    height: 17vw;
+    height: 20vw;
+    background: rgb(236 85 1 / 73%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(2.9px);
+    -webkit-backdrop-filter: blur(2.9px);
+    border: 1px solid rgba(237, 100, 23, 0.47);
   }
-  
+  /*.mh-review .mh-box-container .mh-box {
+    background: #F3803A;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 40%), 0 5px 15px rgb(0 0 0 / 10%);
+    flex: 1 1 30rem;
+    border-radius: 1rem;
+    height: 20vw;
+}*/
   .mh-review .mh-box-container .mh-box .hs-quote-right {
     position: absolute;
     top: 1rem;
@@ -62,12 +79,12 @@
     opacity: 0.3;
   }
   .mh-review .mh-box-container .mh-box .user-commets .mh-img {
-    border-radius: 50%;
-    object-fit: cover;
-    height: 4rem;
-    width: 4rem;
+    /* border-radius: 50%; */
+    /* object-fit: cover; */
+    height: 5rem;
+    width: 5rem;
     margin-top: 1rem;
-  }
+}
   .mh-img-sale{
     object-fit: cover;
     /* height: 4rem; */
@@ -75,7 +92,7 @@
     margin-top: 1rem;
   }
   .mh-img-expe{
-    height: 4.5rem;
+    height: 5rem;
     /* width: 4rem; */
     margin-top: 1rem;
   }
@@ -233,14 +250,14 @@
     left: 10%;
     top: 5vw;
   }
-  .h1Gradient{
+  .h1Gradient {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3.5em;
-    margin:0;  
-    color:black;
-    line-height: 65px;
-    letter-spacing: 2px;
-  }
+    font-size: 2.7em;
+    margin: 0;
+    color: black;
+    line-height: 67px;
+    /* letter-spacing: 5px; */
+}
   
   .img-div img {
     position: relative;
@@ -278,11 +295,10 @@
     top: 5vw;
 }
 .h1Gradient {
-    font-size: 3.5em;
+    font-size: 2.5em;
     /* margin: 9px; */
     text-align: center;
-    margin-left: 12vw;
-
+    /* margin-left: 12vw; */
 }
 
 }
@@ -343,8 +359,10 @@
     font-size: 1.5em;
     margin: 0;
     text-align: center;
-}
+  }
     
   
-  }
+}
+
+
   
