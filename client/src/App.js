@@ -9,7 +9,7 @@ import Home from "./pages/home/domain/Home";
 import Help from "./pages/help/Help";
 import Workers from "./pages/workers/domain/Workers";
 import Generals from "./styled-components/styles_generals";
-import AboutMe from "./pages/about_me/AboutMe";
+import AboutMe from "./pages/about_me/domain/AboutMe.jsx";
 import Login from "./pages/Auth/login/domain/LoginPage";
 import Footer from "./components/Footer/Footer";
 import RegisterPage from "./pages/Auth/register/domain/RegisterPage";

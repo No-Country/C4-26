@@ -3,8 +3,8 @@ import Button from "react-bootstrap/Button";
 import "../../login/sass/style.scss";
 import { countrys } from "../infrastructure/_countries";
 //import imgPerfilM from "../../../../assets/img/naranja1.png";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faUserPlus, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserPlus, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 
 const RegisterPage = () => {
   // ===================== Block 0 - Variables de estado =============================
@@ -56,24 +56,24 @@ const RegisterPage = () => {
                 onChange={handleUpLoadImg}
               />
               <label htmlFor="add-photo">
-                {/*<FontAwesomeIcon
+                <FontAwesomeIcon
                   className="img-edit-reg"
                   icon={faPenToSquare}
-                />*/}
+                />
               </label>
             </div>
             <img className="reg-img" src={srcImg} alt="Img-Perfil" />
           </div>
 
           <div className="register-content">
-            <h1 className="register-title">Registrarme</h1>
+            <h1 className="register-title">Register</h1>
           </div>
           <div className="content-hr center">
             <div className="separator">
               <hr />
               <span className="next-login">
                 <div className="icon-reg">
-                  {/*<FontAwesomeIcon className="icon-reg" icon={faUserPlus} />*/}
+                  <FontAwesomeIcon className="icon-reg" icon={faUserPlus} />
                 </div>
               </span>
               <hr />
@@ -82,17 +82,17 @@ const RegisterPage = () => {
 
           <form className="">
             <div className="content-hr center">
-              <label className="name-input">Nombre Completo</label>
+              <label className="name-input">Full Name</label>
               <input
                 type="text"
                 name="full-name"
-                placeholder="Nombre Completo"
+                placeholder="Full Name"
                 className="form-control-reg reg-input-field center"
                 autoComplete="off"
                 onChange={handleChange}
               />
 
-              <label className="name-input">Número de contacto</label>
+              <label className="name-input">Number Phone</label>
               <div className="numberPhone">
                 <select
                   className="form-control-reg cod-input-field"
@@ -100,7 +100,7 @@ const RegisterPage = () => {
                   placeholder="Código"
                   onChange={handleChange}
                 >
-                  <option>Codigo</option>
+                  <option>Code</option>
                   {countrys.map((country) => (
                     <option key={country.code} value={country.phone}>
                       {`${country.code}(+${country.phone})`}
@@ -111,24 +111,24 @@ const RegisterPage = () => {
                 <input
                   type="text"
                   name="phone-num"
-                  placeholder="Teléfono"
+                  placeholder="Phone"
                   className="form-control-reg num-input-field"
                   autoComplete="off"
                   onChange={handleChange}
                 />
               </div>
 
-              <label className="name-input">Perfil profesional</label>
+              <label className="name-input">Title Perfil</label>
               <input
                 type="text"
                 name="title-perfil"
-                placeholder="Perfil profesional"
+                placeholder="Title Perfil"
                 className="form-control-reg reg-input-field"
                 autoComplete="off"
                 onChange={handleChange}
               />
 
-              <label className="name-input">Correo electrónico</label>
+              <label className="name-input">E-mail</label>
               <input
                 type="email"
                 name="email"
@@ -138,36 +138,36 @@ const RegisterPage = () => {
                 onChange={handleChange}
               />
 
-              <label className="name-input">Contraseña</label>
+              <label className="name-input">Password</label>
               <input
                 type="password"
                 name="password"
-                placeholder="Contraseña"
+                placeholder="Password"
                 className="form-control-reg reg-input-field"
                 autoComplete="off"
                 onChange={handleChange}
               />
 
-              <label className="name-input">Categoría</label>
+              <label className="name-input">Category</label>
               <select
                 className="form-control-reg reg-input-field"
                 name="category"
-                placeholder="Codigo y Pais"
+                placeholder="Code and Country"
                 onChange={handleChange}
               >
-                <option>Seleccionar una categoria</option>
+                <option>Select a category</option>
                 <option value="teekers">Seekers</option>
                 <option value="teamers">Teamers</option>
               </select>
 
-              <label className="name-input">Pais de Residencia</label>
+              <label className="name-input">Country</label>
               <select
                 className="form-control-reg reg-input-field"
                 name="country"
-                placeholder="Codigo y Pais"
+                placeholder="Code and Country"
                 onChange={handleChange}
               >
-                <option>Seleccionar país</option>
+                <option>Select a Country</option>
                 {countrys.map((country) => (
                   <option key={country.code} value={country.label}>
                     {`${country.label} (+${country.phone})`}
@@ -183,7 +183,7 @@ const RegisterPage = () => {
               className="button-ctr mt-3 text-center btn btn-danger btn-block register-btn"
               /*onClick={handleRegister}*/
             >
-              Registrarme
+              Register
             </Button>
           </div>
         </div>
