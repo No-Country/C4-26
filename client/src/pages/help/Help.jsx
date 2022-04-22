@@ -10,10 +10,10 @@ const Help = () => {
         <h1>You'll love it! our simplicity!</h1>
       </section>
       <div className="big-wrapper">
-        <div className="showcase-area">
-          <div className="help-container">
+        <div className="showcase-area1">
+          <div className="help-container1">
             <div className="help-left">
-              <div className="big-title">
+              <div className="help_titleBig">
                 <h1>1.- Future is here,</h1>
                 <h1>Start Exploring now.</h1>
               </div>
@@ -30,13 +30,13 @@ const Help = () => {
          </div>
         </div>
 
-         <div className="showcase-area">
-          <div className="help-container">
+         <div className="showcase-area2">
+          <div className="help-container2">
             <div className="help-images">
              <img src={require("../../assets/img/help/searchMen.png")} alt="Person Image" className="help-right1"/>
             </div>
             <div className="help-left">
-              <div className="big-title">
+              <div className="help_titleBig">
                 <h1>2.- Find the ideal profile,</h1>
                 <h1>For your project or company.</h1>
               </div>
@@ -49,10 +49,10 @@ const Help = () => {
          </div>
         </div>
 
-        <div className="showcase-area">
-          <div className="help-container">
+        <div className="showcase-area3">
+          <div className="help-container3">
             <div className="help-left">
-              <div className="big-title">
+              <div className="help_titleBig">
                 <h1>3.- Add the profile</h1>
                 <h1>To your shopping cart.</h1>
               </div>
@@ -69,13 +69,13 @@ const Help = () => {
          </div>
         </div>
 
-        <div className="showcase-area">
-          <div className="help-container">
+        <div className="showcase-area4">
+          <div className="help-container4">
             <div className="help-images">
              <img src={require("../../assets/img/help/womanProfileWork.png")} alt="Person Image" className="help-right1"/>
             </div>
             <div className="help-left">
-              <div className="big-title">
+              <div className="help_titleBig">
                 <h1>4.- Start the ideal project, </h1>
                 <h1>With JobsMarkets.</h1>
               </div>

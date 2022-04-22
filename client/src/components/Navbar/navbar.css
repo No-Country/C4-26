@@ -108,12 +108,10 @@
   
   @media screen and (max-width:992px){
     .h-logo_img {
-      height: 2.9rem;
-      padding: 0.5rem;
-      position: absolute;
-      top:15px;
-      left:35px;
-      display: flex;
+    height: 4rem;
+    position: absolute;
+    left: 35px;
+    display: flex;
   }
     .nav-links{
         display: none;
