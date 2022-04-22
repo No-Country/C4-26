@@ -6,6 +6,7 @@
     margin-top: 1vw;
     flex-wrap: wrap;
     transform: scale(0.9);
+    margin-left: 0.5em;
 }
 .card-container {
 	background: #eb632f;
@@ -136,6 +137,15 @@
   transition: all 265ms ease-in;
 }
 
+@media screen and (max-width: 768px) {
+  .card-container {
+    left: 21vw;
+    margin-bottom: -25%;
+  }
+}
+
+    
+
 @media screen and (max-width: 425px) {
   .cw-main-card {
     
@@ -143,9 +153,11 @@
     margin-top: -12vw;
   }
   .card-container {
+    margin-bottom: -35%;
+    left: 0.5em;
     
-    margin-bottom: -29%;
     
 }
+
 
 }

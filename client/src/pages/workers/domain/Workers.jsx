@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import CardWorkers from "../../../components/Workers/CardWorkers/CardWorkers";
+import '../../workers/domain/workers.css'
 
 
 const Workers = () => {
@@ -13,7 +14,7 @@ const Workers = () => {
   }, []);
   
   return profile.map(({id, name, ubication, profile, description, price}) => (
-    <div>
+    <div className="w-center-card">
       <CardWorkers
         key={id}
         name={name}

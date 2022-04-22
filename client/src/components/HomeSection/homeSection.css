@@ -51,12 +51,12 @@
     flex: 1 1 30rem;
     border-radius: 0.5rem;
     height: 20vw;
-    background: rgb(236 85 1 / 73%);
+    background: #EED9C7;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
     backdrop-filter: blur(2.9px);
     -webkit-backdrop-filter: blur(2.9px);
-    border: 1px solid rgba(237, 100, 23, 0.47);
+    border: 1px solid #00000033;
   }
   /*.mh-review .mh-box-container .mh-box {
     background: #F3803A;
