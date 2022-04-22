@@ -3,13 +3,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
+    margin-top: 1vw;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    transform: scale(0.9);
 }
 .card-container {
 	background: #eb632f;
@@ -22,10 +18,10 @@
 	position: relative;
 	width: 350px;
 	max-width: 100%;
-    text-align: center;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    border-radius: 20px;
+  text-align: center;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  border-radius: 20px;
 }
 
 .cw-name-profile{
@@ -44,7 +40,7 @@
 .cw-description-profile{
   font-size: 0.9em;
 	line-height: 21px;
-  margin: 10px 0;
+  margin: 10px 20px;
 }
 .cw-price{
   font-size: 1em;
@@ -135,7 +131,21 @@
   -webkit-transform: scale(2.2);
   color: #eb632f;
   background: -webkit-linear-gradient(45deg, #eb632f, #dae50b);
- -webkit-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
+}
+
+@media screen and (max-width: 425px) {
+  .cw-main-card {
+    
+    transform: scale(0.6);
+    margin-top: -12vw;
+  }
+  .card-container {
+    
+    margin-bottom: -29%;
+    
+}
+
 }

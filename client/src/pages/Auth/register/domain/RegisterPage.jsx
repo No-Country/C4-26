@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import "../../login/sass/style.scss";
 import { countrys } from "../infrastructure/_countries";
-//import imgPerfilM from "../../../../assets/img/naranja1.png";
+import imgPerfilM from "../../../../assets/img/naranja1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 

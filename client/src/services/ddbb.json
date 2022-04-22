@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "Raúl Lorca",
+      "ubication": "Canada",
+      "profile": "Software Engineer",
+      "description": "Create computer programs that meet the needs of society and business",
+      "price": "299.99"
+    },
+    {
+      "id": "2",
+      "name": "María Bernal",
+      "ubication": "Colombia",
+      "profile": "Software Engineer",
+      "description": "Create computer programs that meet the needs of society and business",
+      "price": "299.99"
+    },
+    
+    {
+      "id": "3",
+      "name": "Diana Smith",
+      "ubication": "New York",
+      "profile": "UX-UI",
+      "description": "User interface designer and front-end developer",
+      "price": "299.99"
+    }
+  ]
+}

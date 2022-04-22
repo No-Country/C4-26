@@ -2,24 +2,21 @@
 import React from 'react'
 
 import '../CardWorkers/cardWorkers.css'
-const CardWorkers = () => {
+const CardWorkers = ({name, ubication, profile, description, price}) => {
     return (
     <section className="cw-main-card">             
  	<div className="card-container">
 	<img className="round" src={require("../../../assets/img/naranja1.png")} alt="user" />
-	<h2 className="cw-name-profile">Diana Smith</h2>
-    <h4 className="cw-name-country">📍 New York</h4>
-    <h4 className="cw-title-profile">UX Product Design</h4>
+	<h2 className="cw-name-profile">{name}</h2>
+    <h4 className="cw-name-country">📍 {ubication}</h4>
+    <h4 className="cw-title-profile">{profile}</h4>
 	
-	<p className="cw-description-profile">User interface designer and <br/> front-end developer</p>
-	<p className="cw-price">$299.99</p>
+	<p className="cw-description-profile">{description}</p>
+	<p className="cw-price">$ {price}</p>
     <div className="cw-buttons">
 		<button className="primary">
 			Add Service
 		</button>
-    {/*<button className="primary-ghost">
-        Add Service
-    </button>*/}
 	</div>
 	<section className="cw-skills">
 		<ul className="social-icons">
