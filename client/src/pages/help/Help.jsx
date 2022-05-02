@@ -18,9 +18,8 @@ const Help = () => {
                 <h1>Start Exploring now.</h1>
               </div>
               <p className="help-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus eius distinctio odit, magni magnam qui ex perferendis
-                vitae!
+                The first step is to register in the application,
+                either from its web or mobile version!
               </p>
             </div>
 
@@ -41,9 +40,8 @@ const Help = () => {
                 <h1>For your project or company.</h1>
               </div>
               <p className="help-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus eius distinctio odit, magni magnam qui ex perferendis
-                vitae!
+                Each job description will be quoted according to the requirements it has,
+                and will be transformed into a job offer at the time the company accepts the search quote!
               </p>
             </div>
          </div>
@@ -57,9 +55,8 @@ const Help = () => {
                 <h1>To your shopping cart.</h1>
               </div>
               <p className="help-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus eius distinctio odit, magni magnam qui ex perferendis
-                vitae!
+                If you have already selected the ideal profile,
+                it is time to add it to the shopping cart!
               </p>
             </div>
 
@@ -80,9 +77,8 @@ const Help = () => {
                 <h1>With JobsMarkets.</h1>
               </div>
               <p className="help-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus eius distinctio odit, magni magnam qui ex perferendis
-                vitae!
+                JobsMarkets offers qualified profiles
+                for your company or project!
               </p>
             </div>
          </div>

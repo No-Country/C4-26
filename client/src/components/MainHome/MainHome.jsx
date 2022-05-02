@@ -11,11 +11,11 @@ const MainHome = () => {
         <div className="mh-text">
           <p
           className="mh-txt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Our value proposition
           </p>
           <p
           className="mh-txt2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            We provide an effective recruitment and selection service for IT personnel: companies can create job offers according to their needs, optimizing the process from the first step thanks to the automated descriptions of the set to cover.
           </p>
         </div>
       </div>

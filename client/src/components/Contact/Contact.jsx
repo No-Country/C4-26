@@ -14,9 +14,9 @@ const Contact = () => {
                 <div className="contact-container">
             <div className="contact-center">
               <p className="contact-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus eius distinctio odit, magni magnam qui ex perferendis
-                vitae!
+                We are suitable professionals in the technological area
+                and we know the difficulty of finding quality IT talent,
+                that's why we created the path towards it.!
               </p>
               <input className="contact-input" type="text" name="email" placeholder="Enter Your Name"></input>
                           

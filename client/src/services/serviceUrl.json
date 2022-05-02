@@ -12,13 +12,12 @@
       "id": "2",
       "name": "María Bernal",
       "ubication": "Colombia",
-      "profile": "Software Engineer",
-      "description": "Create computer programs that meet the needs of society and business",
+      "profile": "Lawyer",
+      "description": "I represent clients in court, before government entities or in private legal matters.",
       "price": "299.99"
     },
-    
     {
-      "id": "3",
+      "id": "5",
       "name": "Diana Smith",
       "ubication": "New York",
       "profile": "UX-UI",

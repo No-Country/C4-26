@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="text">
           <h6 
           className="h1Gradient">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Find the talent your company needs.
             </h6>
         </div>
         <div className="img-div">
